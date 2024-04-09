@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CoolingDialogClass</class>
+ <widget class="QWidget" name="CoolingDialogClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>926</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_7">
+   <item row="0" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>198</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBoxAirCooling">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox{
+    background-color: transparent;
+}</string>
+     </property>
+     <property name="title">
+      <string>Air Cooling</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>4</number>
+      </property>
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBoxAirCoolingDefaultValues">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{
+    background-color: transparent;
+}</string>
+        </property>
+        <property name="title">
+         <string>Default Values</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <item row="2" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardAirCoolingCameraLightDefaultValue" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_42">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxAirCoolingGlassDefaultValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K71 Output</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> l/min</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>200.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardAirCoolingCameraLightDefaultValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Air Cooling Glass</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardAirCoolingCameraDefaultValue" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_41">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxAirCoolingCameraAndLightDefaultValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K71 Output</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> l/min</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>200.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardAirCoolingCameraDefaultValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Air Cooling Camera/Light</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardAirCoolingValvesDefaultValue" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_43">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxAirCoolingValvesDefaultValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K71 Output</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> l/min</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>200.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardAirCoolingValvesDefaultValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Air Cooling Valves</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="groupBoxAirCoolingActualValues">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{
+    background-color: transparent;
+}</string>
+        </property>
+        <property name="title">
+         <string>Actual Values</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <item row="2" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardAirCoolingCameraLightActualValue" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_39">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxAirCoolingGlassActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K32 Input</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> l/min</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>1000000.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardAirCoolingCameraLightActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Air Cooling Glass</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardAirCoolingCameraActualValue" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_38">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxAirCoolingCameraAndLightActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K32 Input</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> l/min</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>1000000.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardAirCoolingCameraActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Air Cooling Camer/Light</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardAirCoolingValvesActualValue" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_40">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxAirCoolingValvesActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K32 Input</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> l/min</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>1000000.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardAirCoolingValvesActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Air Cooling Valves</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QGroupBox" name="WaterCooling">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox{
+    background-color: transparent;
+}</string>
+     </property>
+     <property name="title">
+      <string>Water Cooling</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>4</number>
+      </property>
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBoxWaterCoolingDefaultValues">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{
+    background-color: transparent;
+}</string>
+        </property>
+        <property name="title">
+         <string>Default Value</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardWaterCoolingTemperatureDefault" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_49">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxWaterCoolingTemperatureDefault">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K33 Input</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> °C</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>100.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>20.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardWaterCoolingTemperatureDefault">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Temperature</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardWaterCoolingDefaultValue" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_44">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxWaterCoolingDefaultValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K71 Output</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> %</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>100.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelDashBoardWaterCoolingDefaultValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Stroke</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardWaterCoolingCircuitDefaultSensor" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_45">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxWaterCoolingCircuitDefaultSensor">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K70 Output</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> °C</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>1000000.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardWaterCoolingCircuitDefaultSensor">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string notr="true">Temp Test</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="groupBoxWaterCoolingActualValues">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{
+    background-color: transparent;
+}</string>
+        </property>
+        <property name="title">
+         <string>Actual Values</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardWaterCoolingTemperatureReturn" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_48">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxWaterCoolingTemperatureReturn">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K33 Input</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> °C</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>1000000.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>20.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardWaterCoolingTemperatureReturn">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Temperature</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardWaterCoolingActualValue" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_46">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxWaterCoolingActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K32 Input</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> %</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>100.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelDashBoardWaterCoolingActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Stroke</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardFlowTransmitterWaterCoolingCircuitActualvalue" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_47">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxFlowTransmitterWaterCoolingCircuitActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>K33 Input</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> l/min</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>1000000.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelDashBoardFlowTransmitterWaterCoolingCircuitActualValue">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Flow Transmitter</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>198</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>237</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ContentBoardItem</class>
+   <extends>QWidget</extends>
+   <header location="global">contentboarditem.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

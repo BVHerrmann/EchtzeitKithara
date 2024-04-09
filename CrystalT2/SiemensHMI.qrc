@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="/SiemensHMI">
+    <file>ArrowMoveLeftT.png</file>
+    <file>switch-off-Red-Big.png</file>
+    <file>ArrowMoveBotT.png</file>
+    <file>ArrowMoveLeftT.png</file>
+    <file>ArrowMoveRightT.png</file>
+    <file>ArrowMoveTopT.png</file>
+    <file>switch-on-Green-Big.png</file>
+    <file>BertramBildverarbeitungLogo.svg</file>
+    <file>BertramLogo.svg</file>
+    <file>ArrowDown.png</file>
+    <file>SliderButtonLeft.png</file>
+    <file>United-Kingdom-icon.png</file>
+    <file>Germany-icon.png</file>
+    <file>ProgramIcon.png</file>
+    <file>France-icon.png</file>
+    <file>switch-off-Red.png</file>
+    <file>switch-on-Green.png</file>
+    <file>SliderButtonRight.png</file>
+    <file>ArrowLeftToRight.png</file>
+    <file>ArrowRightToLeft.png</file>
+  </qresource>
+</RCC>

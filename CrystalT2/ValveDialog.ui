@@ -1,0 +1,1976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ValveDialog</class>
+ <widget class="QWidget" name="ValveDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1170</width>
+    <height>907</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>278</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1" rowspan="2">
+    <widget class="QGroupBox" name="groupBoxValveParameter">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox{
+    background-color: transparent;
+}</string>
+     </property>
+     <property name="title">
+      <string>First Valve</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_12">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>4</number>
+      </property>
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="groupBoxRampSettings">
+        <property name="title">
+         <string>Ramp Settings</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_24">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardCloseVolts" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+background:rgb(255,255,255);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_16">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelContentBoardCloseVolts">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Close Volts</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxCloseVolts">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="keyboardTracking">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string> V</string>
+              </property>
+              <property name="decimals">
+               <number>0</number>
+              </property>
+              <property name="minimum">
+               <double>80.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>120.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>100.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardStroke" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+background:rgb(255,255,255);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_17">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelContentBoardStroke">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Stroke</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxStroke">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> %</string>
+              </property>
+              <property name="decimals">
+               <number>0</number>
+              </property>
+              <property name="minimum">
+               <double>75.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>90.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>90.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardOpen" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+background:rgb(255,255,255);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_20">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelContentBoardOpen">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Open</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxOpen">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> ms</string>
+              </property>
+              <property name="decimals">
+               <number>3</number>
+              </property>
+              <property name="minimum">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>0.500000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.001000000000000</double>
+              </property>
+              <property name="value">
+               <double>0.250000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardClose" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+background:rgb(255,255,255);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_19">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelContentBoardClose">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Close</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxClose">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="suffix">
+               <string> ms</string>
+              </property>
+              <property name="decimals">
+               <number>3</number>
+              </property>
+              <property name="minimum">
+               <double>0.200000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>2.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.001000000000000</double>
+              </property>
+              <property name="value">
+               <double>0.250000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>81</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QGroupBox" name="groupBoxHeatersSettings">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Heating T° Settings</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_15">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardHeatersTemperature" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+background:rgb(255,255,255);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_23">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelContentBoardHeatersTemperature">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Temp.</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxHeatersTemperature">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="keyboardTracking">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string>  °C</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="minimum">
+               <double>10.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>100.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>25.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardHeatersMode_2" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+*/
+
+/*QComboBox
+{
+    background:rgb(255,255,255);
+    color:rgb(39,51,66);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Siemens Sans;
+    border: 1px solid rgb(39,51,66); 
+    min-height: 32px;
+    max-height: 32px;
+}
+
+
+QComboBox QAbstractItemView
+{
+     selection-background-color: rgb(196,199,204);
+     padding: 0px 0px 0px 0px;
+}
+
+
+QComboBox::drop-down
+{
+     width: 0px;
+     color: white;
+     border-left-width: 0px;
+     margin: 0px;
+ }
+*/
+
+
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_34">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QComboBox" name="comboBoxHeatersMode">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>-1</number>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QComboBox::AdjustToContents</enum>
+              </property>
+              <property name="minimumContentsLength">
+               <number>0</number>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="modelColumn">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelContentBoardHeatersMode">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Mode     </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>249</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBoxValveSettings">
+        <property name="title">
+         <string>Valve Settings</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardCount" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(255,255,255);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}*/
+
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+
+
+
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelContentBoardCount">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Count     </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxCount">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="keyboardTracking">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string/>
+              </property>
+              <property name="decimals">
+               <number>0</number>
+              </property>
+              <property name="minimum">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>10000.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>1.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardModus" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+*/
+
+/*QComboBox
+{
+    background:rgb(255,255,255);
+    color:rgb(39,51,66);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Siemens Sans;
+    border: 1px solid rgb(39,51,66); 
+    min-height: 32px;
+    max-height: 32px;
+}
+
+
+
+QComboBox QAbstractItemView
+{
+     selection-background-color: rgb(196,199,204);
+     padding: 0px 0px 0px 0px;
+}
+
+
+QComboBox::drop-down
+{
+     width: 0px;
+     color: white;
+     border-left-width: 0px;
+     margin: 0px;
+ }
+*/
+
+
+
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="QComboBox" name="comboBoxMode">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>-1</number>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QComboBox::AdjustToContents</enum>
+              </property>
+              <property name="minimumContentsLength">
+               <number>0</number>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="modelColumn">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelContentBoardValveMode">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Mode      </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardPause" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+  background:rgb(255,255,255);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelContentBoardPause">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Pause</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxPause">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="keyboardTracking">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string> ms</string>
+              </property>
+              <property name="decimals">
+               <number>2</number>
+              </property>
+              <property name="minimum">
+               <double>2.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>10000.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>30.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardPulse" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 80px;
+     max-height: 80px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QDoubleSpinBox{
+background:rgb(255,255,255);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Siemens Sans;
+  min-height: 32px;
+  max-height: 32px;
+}
+*/
+QDoubleSpinBox::focus{
+ border: 2px solid rgb(0,95,135);
+}
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelContentBoardPulse">
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Pulse</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxPulse">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="keyboardTracking">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string> ms</string>
+              </property>
+              <property name="decimals">
+               <number>2</number>
+              </property>
+              <property name="minimum">
+               <double>0.010000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>40.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.010000000000000</double>
+              </property>
+              <property name="value">
+               <double>10.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="ContentBoardItem" name="widgetDashBoardTitleCycle" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>88</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+     min-height: 40px;
+     max-height: 40px;
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+*/
+
+
+
+
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelContentBoardCycle">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Siemens Sans</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Cycle: 40 ms</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>18</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2" rowspan="2">
+    <layout class="QGridLayout" name="gridLayout_11">
+     <item row="2" column="0">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBoxPicoCommands">
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+    background-color: transparent;
+}</string>
+       </property>
+       <property name="title">
+        <string>Valve Status/Erorrs</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>4</number>
+        </property>
+        <property name="spacing">
+         <number>4</number>
+        </property>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButtonResetError">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Siemens Sans</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/*QPushButton{
+   background-color: rgb(64, 77, 83);
+   color: rgb(255, 255, 255 );
+   min-height: 40px;
+   font-size: 16px;
+   font-weight: bold;
+   font-family: Siemens Sans;
+  border: none;
+}
+QPushButton:pressed {
+      border: 2px solid rgb(148,182, 231 ); 
+ }
+*/
+
+</string>
+            </property>
+            <property name="text">
+             <string>Reset Error</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="autoRepeat">
+             <bool>false</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButtonClearList">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Siemens Sans</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/*QPushButton{
+   background-color: rgb(64, 77, 83);
+   color: rgb(255, 255, 255 );
+   min-height: 40px;
+   font-size: 16px;
+   font-weight: bold;
+   font-family: Siemens Sans;
+  border: none;
+}
+QPushButton:pressed {
+      border: 2px solid rgb(148,182, 231 ); 
+ }
+*/
+</string>
+            </property>
+            <property name="text">
+             <string>Clear List</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="autoRepeat">
+             <bool>false</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButtonGetStatus">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Siemens Sans</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/*QPushButton{
+   background-color: rgb(64, 77, 83);
+   color: rgb(255, 255, 255 );
+   min-height: 40px;
+   font-size: 16px;
+   font-weight: bold;
+   font-family: Siemens Sans;
+  border: none;
+}
+QPushButton:pressed {
+      border: 2px solid rgb(148,182, 231 ); 
+ }
+*/
+
+</string>
+            </property>
+            <property name="text">
+             <string>Get Valve Status</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="autoRepeat">
+             <bool>false</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButtonGetLastErrors">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Siemens Sans</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/*QPushButton{
+   background-color: rgb(64, 77, 83);
+   color: rgb(255, 255, 255 );
+   min-height: 40px;
+   font-size: 16px;
+   font-weight: bold;
+   font-family: Siemens Sans;
+  border: none;
+}
+QPushButton:pressed {
+      border: 2px solid rgb(148,182, 231 ); 
+ }
+*/
+
+</string>
+            </property>
+            <property name="text">
+             <string>Get Last Errors</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="autoRepeat">
+             <bool>false</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <widget class="ContentBoardItem" name="widgetDashBoardResponsePICOCommands" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>64</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/*QFrame{
+     background:rgb(249,247,248);
+}
+
+QLabel{
+  background:rgb(249,247,248);
+  color: rgb(39,51,66);
+  font-size: 16px;
+  font-family: Siemens Sans;
+  min-height: 20px;
+  max-height: 20px;
+}
+QListWidget
+ {
+    background-color:  rgb(255, 255, 255);
+    alternate-background-color: rgb(230,230,232);
+    color: rgb(55, 56, 59 );
+   font-size: 16px;
+   font-weight: bold;
+   font-family: Siemens Sans;
+}
+*/
+
+</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelDashBoardResponse">
+             <property name="font">
+              <font>
+               <family>Siemens Sans</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Response</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QListWidget" name="listWidgetShowResponse">
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QListWidget
+ {
+    background-color:  rgb(255, 255, 255);
+    alternate-background-color: rgb(230,230,232);
+    color: rgb(55, 56, 59 );
+   font-size: 16px;
+   font-weight: bold;
+   font-family: Siemens Sans;
+}
+
+
+</string>
+             </property>
+             <property name="autoScrollMargin">
+              <number>8</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="3">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+  <zorder>groupBoxValveParameter</zorder>
+  <zorder>horizontalSpacer</zorder>
+  <zorder>horizontalSpacer_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ContentBoardItem</class>
+   <extends>QWidget</extends>
+   <header location="global">contentboarditem.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="SiemensHMI.qrc"/>
+ </resources>
+ <connections/>
+</ui>
